@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/KOKO11000/project-Web-Js-Newsletter#readme",
   "dependencies": {
-    "cors": "^2.8.6"
+    "cors": "^2.8.6",
+    "dotenv": "^17.2.4",
+    "newsapi": "^2.4.1"
   }
 }
