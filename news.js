@@ -1,8 +1,15 @@
+import { getData } from "./request";
+
 const url = "c007d773f03842438bae65fb032c036d"
 console.log(url);
 
 const root = document.getElementById("root")
 const nav = document.createElement("nav")
+const data =[]
+
+await getDataa()
+
+
 
 function navbar() {
     nav.classList.add("navbar")
@@ -51,34 +58,52 @@ navbar()
 // =============================================================
 
 
+function createPost(params) {
+    
+}
+
 const story = document.createElement("article")
 root.appendChild(story)
-root.className("one-article")
+story.classList.add("the-article")
 
 
 const numStory = document.createElement("b")
 story.appendChild(numStory)
-story.className("one-article num-story")
+story.classList.add("one-article")
+numStory.textContent = "1"
+
 
 
 const imgStory = document.createElement("img")
 story.appendChild(imgStory)
-story.className("one-article img-story")
+imgStory.classList.add("one-article")
+imgStory.src = "images/food.jpg"
 
+
+
+const informetion = document.createElement("article")
+informetion.classList.add("informetion")
+story.appendChild(informetion)
 
 const h1Story = document.createElement("h1")
-story.appendChild(h1Story)
-story.className("one-article h1-story")
+informetion.appendChild(h1Story)
+h1Story.classList.add("one-article")
+h1Story.textContent = "bibi love trump"
+
+
 
 
 const author = document.createElement("span")
-story.appendChild(author)
-story.className("one-article author")
+informetion.appendChild(author)
+author.classList.add("one-article")
+author.textContent = " By Netanel Ozeri"
+
 
 
 const paragraph = document.createElement("p")
-story.appendChild(paragraph)
-story.className("one-article paragraph-story")
+informetion.appendChild(paragraph)
+paragraph.classList.add("one-article")
+paragraph.textContent = "lorem 30 vedsjfi eefi ef he fie hfif ei hfie f oewfhoew iff eo hfoe hfo ofeh ewof"
 
 
 
@@ -87,16 +112,10 @@ story.className("one-article paragraph-story")
 
 
 
-async function getData() {
-    if (!localStorage.getItem("data")) {
-        await fetch("https://newsapi.org/v2/everything?q=global&apiKey=c007d773f03842438bae65fb032c036d", {})
-        localStorage.setItem("data", JSON.stringify(url))
-    }
-}
 
 
 
-getData()
+
 
 
 
