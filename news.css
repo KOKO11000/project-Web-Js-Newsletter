@@ -1,0 +1,114 @@
+#root {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-rows: repeat(50,1fr);
+    grid-template-columns: repeat(50,1fr);
+}
+
+.navbar {
+    grid-column: 1/51;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+
+.logo:hover {
+    margin-bottom: 0.5%;
+    color: lightblue;
+    cursor: pointer;
+
+
+}
+
+.img-logo {
+    width: 1.3rem;
+    height: 1.3rem;
+
+}
+
+.img-logo:hover {
+    margin-bottom: 0.5%;
+    cursor: pointer;
+}
+
+.logo-web:hover {
+    margin-bottom: 0.5%;
+    color: lightblue;
+    cursor: pointer;
+}
+
+.now:hover {
+    margin-bottom: 0.5%;
+    color: lightblue;
+    cursor: pointer;
+}
+
+.top-post:hover {
+    margin-bottom: 0.5%;
+    color: lightblue;
+    cursor: pointer;
+}
+
+.all-time:hover {
+    margin-bottom: 0.5%;
+    color: lightblue;
+    cursor: pointer;
+}
+
+.the-article {
+    grid-row: span 15;
+    grid-column: span 50;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+
+
+
+}
+
+.one-article b {
+    font-size: x-large;
+    align-self: center;
+    padding:0 2%;
+}
+
+.one-article img {
+    width: 33%;
+    height: 100%;
+
+}
+
+.informetion {
+    display: grid;
+    align-content: space-evenly;
+    padding-left: 1%;
+    
+
+}
+
+.one-article h1{
+        font-size: xx-large;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        justify-self: center;
+
+
+}
+
+.one-article span {
+    color: goldenrod;
+
+    
+}
+
+.one-article p {
+    text-align: start;
+    
+} 
