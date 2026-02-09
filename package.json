@@ -4,7 +4,7 @@
   "description": "��#\u0000 \u0000p\u0000r\u0000o\u0000j\u0000e\u0000c\u0000t\u0000-\u0000W\u0000e\u0000b\u0000-\u0000J\u0000s\u0000-\u0000N\u0000e\u0000w\u0000s\u0000l\u0000e\u0000t\u0000t\u0000e\u0000r\u0000\r\u0000 \u0000",
   "main": "news.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
