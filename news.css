@@ -2,7 +2,7 @@
     display: grid;
     width: 100%;
     height: 100vh;
-    grid-template-rows: repeat(50,1fr);
+    grid-template-rows: repeat(50,auto);
     grid-template-columns: repeat(50,1fr);
 }
 
@@ -85,6 +85,9 @@
     height: 100%;
 
 }
+.one-article img:hover{
+    cursor: pointer;
+}
 
 .informetion {
     display: grid;
@@ -98,8 +101,11 @@
         font-size: xx-large;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         justify-self: center;
+}
 
-
+.one-article h1:hover{
+    cursor: pointer;
+    color: goldenrod;
 }
 
 .one-article span {
@@ -110,5 +116,6 @@
 
 .one-article p {
     text-align: start;
+    font-size:small ;
     
 } 
